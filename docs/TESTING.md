@@ -22,6 +22,10 @@ Checks were performed on 17–18 November 2026. The physical device was a Canal+
 | Refined UI | Glass focus, larger descriptions and distinct source/profile/output panels were checked on physical display 0. Full local patching completed in 21 seconds; all 926 output entries and the APK signature passed independent checks. |
 | Update validation | 16 Android checks passed: a valid signed future-build fixture was accepted, while source URL, version, size, checksum, signing-key, package, downgrade/same-version and damaged-signature cases were rejected. |
 | Self-update and key continuity | The DEBUG patcher updated from version code 2 to 3 through Android's actual installation dialog. Its private verified output survived. A new signing operation after that update produced the same certificate as the pre-update output. The user's Kick MOD still had its original hash. |
+| Public update feed | Android fetched the published 0.1.0 metadata and downloaded all 6,531,044 bytes of the actual release APK from GitHub. SHA-256, package/version and publisher signature verified against the previously installed release. The production release's Updates button then showed that the installed patcher was up to date. |
+| Profile changes | A legacy unmarked private output was not offered as a current result. Repatching with the fingerprint guard completed in 25 seconds, wrote the profile marker and reproduced all 926 verified entries. |
+
+The published patcher is version 0.1.0, version code 2. The release SHA-256 is `e679bc50d04c6d3024bccf96975e0166cba256893cb80149d5e1100269e27c76`. Future downloaded APKs still require Android installation approval; no future Kick port is implied by these updater checks.
 
 ## Existing app and limits
 

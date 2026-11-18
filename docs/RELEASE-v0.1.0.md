@@ -16,4 +16,6 @@ Download **Kick-Android-TV-Patcher.apk**, not the automatically generated source
 
 Tested on a physical Canal+ Android 10 box: native remote navigation, local reconstruction/signing/export, all 926 output entry hashes, signing-key conflict protection and the system installation/upgrade path using separate test apps. The patcher self-update validator passed 16 Android checks; a DEBUG update through Android's dialog kept its data and output signing key.
 
+The public update feed and actual GitHub release APK were also downloaded and verified on the box. Automatic checks run on opening/resuming, not as a background service while the app is closed. New upstream Kick versions require a new tested profile release.
+
 Keep the patcher and its data to preserve this TV's signing key. A locally signed result cannot update an existing mod signed with another key. The patcher never uninstalls that mod or clears its data. Playback of a freshly signed result over the user's existing different-key mod was intentionally not performed. Detailed evidence and limits are in docs/TESTING.md.
