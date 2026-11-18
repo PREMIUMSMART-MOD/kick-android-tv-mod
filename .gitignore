@@ -1,0 +1,10 @@
+build/
+dist/
+.local/
+*.keystore
+*.jks
+*.apkm
+*.apk
+__pycache__/
+*.pyc
+*.backup
