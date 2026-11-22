@@ -2,11 +2,13 @@
 
 ![Kick Android TV MOD features](docs/images/banner.png)
 
-A local patcher app for Android TV. Select your original Kick APKM, apply the supported modifications on your TV, and approve installation with your remote.
+Kick Android TV MOD Patcher adds live latency controls, automatic raid navigation and an audio compressor to the original Kick app. Choose the supported Kick APKM on your TV, then use your remote to patch, sign and install your own copy.
 
-**Android TV patcher 0.1.0 — supports Kick Android TV 1.11.0 (210).**
+**Patcher 0.1.1 supports Kick Android TV 1.12.0 (build 211).**
 
 [Download the patcher APK](https://github.com/PREMIUMSMART-MOD/kick-android-tv-mod/releases/latest/download/Kick-Android-TV-Patcher.apk) · [Release notes](https://github.com/PREMIUMSMART-MOD/kick-android-tv-mod/releases/latest)
+
+![Kick Android TV MOD player with measured live latency and audio controls, captured on 1.11.0](docs/images/player.png)
 
 The local patch/sign pipeline, remote navigation and system installation/upgrade flow have passed on a Canal+ Android 10 box. See [the exact test results and limits](docs/TESTING.md).
 
@@ -14,9 +16,9 @@ The patcher does not include or download Kick APKs. Patching runs locally; openi
 
 ## Supported input
 
-- Kick: Live Streaming **for Android TV**, **1.11.0 (210)**.
+- Kick: Live Streaming **for Android TV**, **1.12.0 (211)**.
 - **arm64-v8a + armeabi-v7a**, **320dpi**, **Android 8.0+** variant.
-- [Open the exact APKMirror variant](https://www.apkmirror.com/apk/kick-live-streaming/kick-live-streaming-android-tv/kick-live-streaming-android-tv-1-11-0-release/kick-live-streaming-android-tv-1-11-0-android-apk-download/).
+- [Open the exact APKMirror variant](https://www.apkmirror.com/apk/kick-live-streaming/kick-live-streaming-android-tv/kick-live-streaming-android-tv-1-12-0-release/kick-live-streaming-android-tv-1-12-0-android-apk-download/).
 - Base APK and three configuration splits in an `.apkm` file. Each module is verified against its SHA-256 hash before patching. Other versions and variants are rejected.
 
 The **Get original APKM** button opens this version's page. Download the APKM, return to the patcher and select it. Download links and any browser checks are handled by APKMirror; the patcher does not automate them.
@@ -31,7 +33,7 @@ The **Get original APKM** button opens this version's page. Download the APKM, r
 
 On TVs without a document picker, you can use an installed file manager's Open/Share action. Direct Download-folder input access is an Android 10 fallback; Android 11+ input requires a document provider or a URI supplied by a file manager. Output export uses MediaStore when a document picker is unavailable. No root or computer is required for the end-user flow.
 
-## Modifications in the 1.11.0 profile
+## Modifications in the 1.12.0 profile
 
 - Target live latency: 3, 5 or 8 seconds in Preferences; measured live offset in the player. Actual stream latency depends on the source and connection.
 - Automatic raid navigation through the app's realtime connection.
@@ -60,6 +62,14 @@ New Kick versions require a maintainer to prepare and test a matching profile fi
 
 Updating the patcher with its matching certificate keeps its data and the TV's output signing key. DEBUG builds stay separate and do not update themselves from the public release feed. No background service runs while the patcher is closed. See [the update and release procedure](docs/UPDATES.md).
 
+## FAQ
+
+**Where do I get the Kick Android TV MOD APK?** Install the [patcher APK](https://github.com/PREMIUMSMART-MOD/kick-android-tv-mod/releases/latest/download/Kick-Android-TV-Patcher.apk) and select **Get original APKM**. Once you have the supported original, the patcher creates the mod APK on your TV.
+
+**Will this replace my current Kick app?** The mod installs alongside the official app. To update an existing mod, the signing key must match. Keep the patcher installed and retain its data to reuse your TV's key.
+
+**Do I need root or a PC?** You can complete the process with your TV remote. Android asks you to approve installation.
+
 ## Source and maintainer tools
 
 `app/` is the native Java Android TV application, built against SDK 35, minimum API 26. Internet access is used for patcher update metadata and the patcher APK; original Kick files are processed locally. `apksig` 8.7.2 signs the output with APK Signature Scheme v2 and aligns stored libraries to 16 KB. This alignment does not change the ELF compatibility of upstream libraries.
@@ -79,8 +89,6 @@ The build uses JDK 11+, Android SDK 35 and build-tools 35.0.0. Override local pa
 ## Preview
 
 ![The native patcher on a Canal+ Android TV box](docs/images/patcher.png)
-
-![Player with latency and audio controls](docs/images/player.png)
 
 ![English preferences in the resulting app](docs/images/settings.png)
 

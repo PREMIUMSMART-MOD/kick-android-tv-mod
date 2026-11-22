@@ -92,6 +92,11 @@ def prepare(apkm: Path, mod: Path, output: Path) -> None:
     originals: dict[str, zipfile.ZipFile] = {}
     exact: dict[str, tuple[str, str]] = {}
     with zipfile.ZipFile(apkm) as wrapper:
+        support = json.loads((Path(__file__).resolve().parents[1] / "app/assets/support.json").read_text(encoding="utf-8"))
+        source_info = json.loads(wrapper.read("info.json"))
+        if (source_info["pname"], source_info["release_version"], int(source_info["versioncode"])) != (
+                "com.kick.mobile", support["version"], support["versionCode"]):
+            raise ValueError("Oryginal nie pasuje do wersji w support.json")
         for name in wrapper.namelist():
             if not name.endswith(".apk"):
                 continue
@@ -135,7 +140,7 @@ def prepare(apkm: Path, mod: Path, output: Path) -> None:
             else:
                 raise ValueError(f"Brak zrodla; nie dolaczam obcego pliku w calosci: {name}")
             entries.append(record)
-    profile = {"format": 1, "version": "1.11.0", "versionCode": 210,
+    profile = {"format": 1, "version": support["version"], "versionCode": support["versionCode"],
                "package": "com.kick.mobile.mod", "modules": modules, "entries": entries}
     (output / "profile.json").write_text(json.dumps(profile, indent=2) + "\n", encoding="utf-8")
     print(f"Gotowe: {len(entries)} wpisow, {len(modules)} oryginalne moduly, {output}")

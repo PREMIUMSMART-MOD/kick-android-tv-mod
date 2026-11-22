@@ -1,5 +1,11 @@
 # Validation — Android TV patcher
 
+## Patcher 0.1.1 with Kick 1.12.0 (211)
+
+On 22 November 2026 the DEBUG patcher reconstructed, signed and verified the APK on a physical Canal+ Skyworth Android 10 box in 27.1 seconds. The instrumented test returned success. An independent comparison of the APK retrieved from the box confirmed all 926 unsigned entries matched the tested mod byte for byte, and desktop apksigner verified its v2 signature. The release patcher certificate matched the installed 0.1.0 release. This run exercised local patching and signing while preserving the existing Kick installation.
+
+## Patcher 0.1.0 with Kick 1.11.0 (210)
+
 Checks were performed on 17–18 November 2026. The physical device was a Canal+ Skyworth Android 10 box, ARM32, 2 GB RAM. This is a native Android application.
 
 ## Completed checks

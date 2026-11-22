@@ -1,54 +1,54 @@
 {
   "format": 1,
-  "version": "1.11.0",
-  "versionCode": 210,
+  "version": "1.12.0",
+  "versionCode": 211,
   "package": "com.kick.mobile.mod",
   "modules": [
     {
       "name": "base.apk",
-      "sha256": "57db2a3b8c66178703b82eefe712f1bb450faafc3ccc4d9986d5a880d5fc1b27",
-      "size": 19938744
-    },
-    {
-      "name": "split_config.arm64_v8a.apk",
-      "sha256": "8b806fdf5d6aa9871dfbfda12310a288bf234284efecf57f74ce54cd825346cd",
-      "size": 1790495
+      "sha256": "5fce2cbbc0df70052ac3ea6ee0a1739d3331dcaf740642331fe699f2cf472d38",
+      "size": 19987896
     },
     {
       "name": "split_config.armeabi_v7a.apk",
-      "sha256": "22eda54e7baf8ffec3c5df0ed6acd66118c8e79747e4430bcd852ae26173918a",
+      "sha256": "b2cb3fab68157210e0b83f80306c57279c5be24007c46eefbb2d7cc1cc369d8e",
       "size": 1385001
     },
     {
+      "name": "split_config.arm64_v8a.apk",
+      "sha256": "6fc63df9ffc47750663d563773fe59fdf9bb1a3f206c636dcc141937e72ab878",
+      "size": 1790495
+    },
+    {
       "name": "split_config.xhdpi.apk",
-      "sha256": "2d821913455250711593f30c650fe166cfc451d9ac5d47d60c0ea213a6ce8990",
+      "sha256": "67fde5f469fdbb4760fe9a79d3c9e10e5c9c08aad92435cdf532cc01c1735edb",
       "size": 94310
     }
   ],
   "entries": [
     {
       "name": "AndroidManifest.xml",
-      "sha256": "15299ee3455202c5a8c5ae5c89e8ae9382807c9650921fa103298a94027f135b",
+      "sha256": "525f57223807dd2d29c0e67237c022ac1eb9c5e31905f83b46cef7583e77828a",
       "size": 23636,
       "stored": false,
       "mode": "delta",
       "module": "base.apk",
       "source": "AndroidManifest.xml",
       "asset": "delta-0000.kdp.gz",
-      "sourceSha256": "e648b6e344b41438f322249c310bc3701fcb3df78df44df7ee85897d19a03429",
-      "patchSha256": "1c866a495d767f1813bf30f22ad0fcd44f0e2a7a7d84c505816dcbe864f767bf"
+      "sourceSha256": "f3b36005c8b177bd6d91d09d6055c372517757d9224f4787fefc6fa0a1667b27",
+      "patchSha256": "ca3e9f1aa7f21dab34e4d0c6d83bcb63870a9a80e94abd2d3d3d1c32763023b4"
     },
     {
       "name": "resources.arsc",
-      "sha256": "90cc71ff7ab86c66ca0db88962a2d99b6a3bcffb25eb8d57529bdc7671f4b7b1",
-      "size": 1228868,
+      "sha256": "f4f410f33ae8885b4fe1ac68d8d9fb27449b6de612f243f8fd2cd21e3dcc2e5c",
+      "size": 1237044,
       "stored": true,
       "mode": "delta",
       "module": "base.apk",
       "source": "resources.arsc",
       "asset": "delta-0001.kdp.gz",
-      "sourceSha256": "2d06507b65b7599233aa1e8308e490ce1bbeeb14af743bb79d0cd393cbda209c",
-      "patchSha256": "28f2588d7efba9a07e70abcf26e045a2d892f53e42cc8ef0dfbc152562e6a928"
+      "sourceSha256": "9a74e849b1ae99a92d5b6d1407aa49307bc807ab5d8d2371bfa25fdb257cc848",
+      "patchSha256": "f9663e327b6dbe19a6564e80cbb6f3a74dd9806075bae625f788fc643f6f25fe"
     },
     {
       "name": "META-INF/androidx.activity_activity-compose.version",
@@ -1177,7 +1177,7 @@
     },
     {
       "name": "META-INF/version-control-info.textproto",
-      "sha256": "e78f263fa255e493b78b357add2374323b14ed4d47d81074836a3fa46e2c2ea8",
+      "sha256": "e58a88df9c125edb90ced951747bd2c7132a83e40097d265d8f01463aa349cbc",
       "size": 120,
       "stored": false,
       "mode": "copy",
@@ -1356,31 +1356,49 @@
       "source": "META-INF/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/verification.properties"
     },
     {
-      "name": "META-INF/services/jr2",
-      "sha256": "f82a3f7028709d7075f40fa3e12143f9add3ee35b95058e0140a6d4d109372fc",
-      "size": 12,
-      "stored": true,
-      "mode": "copy",
-      "module": "base.apk",
-      "source": "META-INF/services/jr2"
-    },
-    {
-      "name": "META-INF/services/ln5",
-      "sha256": "22bb95bb1c9fb352448e1ebd7f31e218b49954cb8070e39b6ead62193e279b5b",
+      "name": "META-INF/services/ib4",
+      "sha256": "9c661d33a813b27f6db1c736ec717e5fc5a5d7dfef1bfa2a57c3594f8eee4ff9",
       "size": 4,
       "stored": true,
       "mode": "copy",
       "module": "base.apk",
-      "source": "META-INF/services/ln5"
+      "source": "META-INF/services/ib4"
     },
     {
-      "name": "META-INF/services/nj1",
+      "name": "META-INF/services/iq3",
+      "sha256": "0b1f4214d145a86b2404222b4e9c0146483149d1d47b03baaa4c1420b9af82a3",
+      "size": 51,
+      "stored": false,
+      "mode": "copy",
+      "module": "base.apk",
+      "source": "META-INF/services/iq3"
+    },
+    {
+      "name": "META-INF/services/mk1",
       "sha256": "1720bf6afe76230866fe4921c2444b0e51faf86666c610b9d14138eb7fd0d25c",
       "size": 3,
       "stored": true,
       "mode": "copy",
       "module": "base.apk",
-      "source": "META-INF/services/nj1"
+      "source": "META-INF/services/mk1"
+    },
+    {
+      "name": "META-INF/services/mw7",
+      "sha256": "4cdc45e87e23663b8bf7a625f4272a2b62a59945a5468699168ea1a96a73bcb7",
+      "size": 4,
+      "stored": true,
+      "mode": "copy",
+      "module": "base.apk",
+      "source": "META-INF/services/mw7"
+    },
+    {
+      "name": "META-INF/services/q86",
+      "sha256": "ab4a8dd8df5790e5e7d158b8546a318fe89abc08cb51a320cdf61da23b6461ff",
+      "size": 4,
+      "stored": true,
+      "mode": "copy",
+      "module": "base.apk",
+      "source": "META-INF/services/q86"
     },
     {
       "name": "META-INF/services/qg0",
@@ -1392,40 +1410,22 @@
       "source": "META-INF/services/qg0"
     },
     {
-      "name": "META-INF/services/qu7",
-      "sha256": "e4402a14cd2f5018b23750a9359c9a08e2d677ff13b6ae3c42d0cf10e69ba807",
+      "name": "META-INF/services/qs2",
+      "sha256": "353da157e1b1d06d4d0971c86de4183e3bd6925b9006a16c47689f9b7db223e3",
+      "size": 12,
+      "stored": true,
+      "mode": "copy",
+      "module": "base.apk",
+      "source": "META-INF/services/qs2"
+    },
+    {
+      "name": "META-INF/services/wo5",
+      "sha256": "10cf6ea5d2f774982ce3f72a79fcf82cd24d48c7056a7ed2b93c9890f395f80f",
       "size": 4,
       "stored": true,
       "mode": "copy",
       "module": "base.apk",
-      "source": "META-INF/services/qu7"
-    },
-    {
-      "name": "META-INF/services/t94",
-      "sha256": "de2af98bb0b0c1fd759f8a83ec9dcd1e126221675143e17f4510ad3a38d8502f",
-      "size": 4,
-      "stored": true,
-      "mode": "copy",
-      "module": "base.apk",
-      "source": "META-INF/services/t94"
-    },
-    {
-      "name": "META-INF/services/w66",
-      "sha256": "2272e785198898a4ea20b9142760e50cca4e292e1cf57e745e678c060e905494",
-      "size": 4,
-      "stored": true,
-      "mode": "copy",
-      "module": "base.apk",
-      "source": "META-INF/services/w66"
-    },
-    {
-      "name": "META-INF/services/yo3",
-      "sha256": "0b1f4214d145a86b2404222b4e9c0146483149d1d47b03baaa4c1420b9af82a3",
-      "size": 51,
-      "stored": false,
-      "mode": "copy",
-      "module": "base.apk",
-      "source": "META-INF/services/yo3"
+      "source": "META-INF/services/wo5"
     },
     {
       "name": "META-INF/services/zi",
@@ -1438,27 +1438,27 @@
     },
     {
       "name": "classes.dex",
-      "sha256": "32314a6911ebc94c1da3e64ce8c2291798ba208935e14508dbef79a89498a13a",
-      "size": 14022288,
+      "sha256": "8a3699629377e7bb61ad40726dbc406a01893d01f3e357139de6d8b180e62e20",
+      "size": 14102260,
       "stored": false,
       "mode": "delta",
       "module": "base.apk",
       "source": "classes.dex",
       "asset": "delta-0156.kdp.gz",
-      "sourceSha256": "a0db754dc98b763c5a807051b348e76aec461fb30d9d0ee617daaa666e813a72",
-      "patchSha256": "fe898de80f9f173b3f57e46e8edaca952eec5103b333747ae93592d1eae13309"
+      "sourceSha256": "964a4ea05330ede099671bc716d39f13c61cc8792b8aabc094e2ffa8f9471a70",
+      "patchSha256": "e35b203898c1e1a48cb5ddfbd9f42e5779a8e53d84a843964da0de7090ba8231"
     },
     {
       "name": "classes2.dex",
-      "sha256": "e8cad058a19243b05fb8cbdc63f1d59cd3b5079ca33fcd7892891c0bd60f43a8",
-      "size": 1783604,
+      "sha256": "00940e6eb5526c12d58c67fd4e176b326db08cc98e0f59773195b2f51df56158",
+      "size": 1800956,
       "stored": false,
       "mode": "delta",
       "module": "base.apk",
       "source": "classes2.dex",
       "asset": "delta-0157.kdp.gz",
-      "sourceSha256": "bd1fc32132e4fcfafc00a1cc461147ed6db943c8f42349939a08360308fad6bc",
-      "patchSha256": "9c3a70297c79f7869fb491de71de175d4adf096ee34be32b0a22dceabfc81c5c"
+      "sourceSha256": "cf924e0503dce79702a8160cd3a5c08d8ccc47de8a5808ce6d337c5c4abb79aa",
+      "patchSha256": "e6bed4f13089b979546ad6a3246daf1f8c87f0f5b01b609ca737bfa331fdc033"
     },
     {
       "name": "classes3.dex",
@@ -3001,7 +3001,7 @@
     },
     {
       "name": "res/drawable/$avd_hide_password__0.xml",
-      "sha256": "cf581e81e5c65a0ce1df65f5bf8fdb2b6ff544f75166971b6ed5a446f262a5fe",
+      "sha256": "52112304d969ea8077ed962a7c4af3ae0b43945a4c7dc5082cfe7432e2a26ff9",
       "size": 1176,
       "stored": false,
       "mode": "copy",
@@ -3010,7 +3010,7 @@
     },
     {
       "name": "res/drawable/$avd_hide_password__1.xml",
-      "sha256": "fb3fcb837ce285583efa58727ce6d2f47d6cd5321c21b0768ee96d3b96cc5982",
+      "sha256": "971e109b86373a119389f3dd6e788008f0b5ef0a848cd33cdae96caa5fdcd61d",
       "size": 592,
       "stored": false,
       "mode": "copy",
@@ -3028,7 +3028,7 @@
     },
     {
       "name": "res/drawable/$avd_show_password__0.xml",
-      "sha256": "963c2fcd2a7311d1cfe049c1451bb95495e50965892fc6c5b62b84c74dee21bf",
+      "sha256": "22a995d2b31b3a518ecaba58d00f9dea18aad3242ac69d6ee9f57d5b4462ff73",
       "size": 1136,
       "stored": false,
       "mode": "copy",
@@ -3037,7 +3037,7 @@
     },
     {
       "name": "res/drawable/$avd_show_password__1.xml",
-      "sha256": "9682f87b55ad298b0fdb002878a8bdb5eb55694dc1ad8ec2dd0f94f3ec2db81c",
+      "sha256": "dac05ffd94f2e9b6002ee15a5388c4334e6ddbd75c89ecec0db0e7a0c2ab8709",
       "size": 592,
       "stored": false,
       "mode": "copy",
@@ -4162,7 +4162,7 @@
     },
     {
       "name": "res/drawable/design_ic_visibility.xml",
-      "sha256": "f1d836e67b97a9c6c911197c369810105ff6257d4a4a04f8c8fac1bdad138739",
+      "sha256": "22e75bfa8997989a6ee7fe451572b9a9920d04fb15983043e0967d85b65e9903",
       "size": 540,
       "stored": false,
       "mode": "copy",
@@ -6943,7 +6943,7 @@
     },
     {
       "name": "res/layout/material_clock_display_divider.xml",
-      "sha256": "0f8799db8a58c85ae9c2e255cafa253d4b705c32fdbbcccb8fe415f174751819",
+      "sha256": "545e675bd4933ae518f0c904d8bef3b0e5e5aa7cf2c1fb9c85496b1bd0e69c3b",
       "size": 752,
       "stored": false,
       "mode": "copy",
@@ -6952,7 +6952,7 @@
     },
     {
       "name": "res/layout/material_clock_period_toggle.xml",
-      "sha256": "88ca8a88ffaf3f89f16b9ac7a552d8daad8b51b943005b0af4dd51b353d4e7c2",
+      "sha256": "fad92e170fdf4813e3d7cd3eec7b0ec9a2b654e654e394daa68d98fcd540e6e4",
       "size": 1504,
       "stored": false,
       "mode": "copy",
@@ -7024,7 +7024,7 @@
     },
     {
       "name": "res/layout/material_timepicker_dialog.xml",
-      "sha256": "997a55ba95d1d03cd582301d7d51a9c33714267df865fa56aa6257a0982d14ad",
+      "sha256": "a2adb9c944dcc931fb23c293b003a63c03e47e02537daa97d31797195af07dc8",
       "size": 3184,
       "stored": false,
       "mode": "copy",
@@ -7141,7 +7141,7 @@
     },
     {
       "name": "res/layout/mtrl_calendar_month_navigation.xml",
-      "sha256": "d9e883ffe9fa29ab8ba6c44998dab0f8024f56e1dea2bc5e428a5f6df8902eee",
+      "sha256": "f74d8b8ff9c94a2290b521e40fa256ef5077f2c6d7deae2cc18352808035f760",
       "size": 1748,
       "stored": false,
       "mode": "copy",
@@ -7195,7 +7195,7 @@
     },
     {
       "name": "res/layout/mtrl_picker_actions.xml",
-      "sha256": "da96b82e3b2cec23fdcdc66eafd2dbf46cc630d371ba4a74ee223dd0f5b02138",
+      "sha256": "d2c8e1489f156979dc2ad4b75894aae82ad87095c527869b3906ac0140a460d1",
       "size": 984,
       "stored": false,
       "mode": "copy",
@@ -7231,7 +7231,7 @@
     },
     {
       "name": "res/layout/mtrl_picker_header_fullscreen.xml",
-      "sha256": "e85310578497e95df5468f57ec0533f6eb0291a1c75cd9a8fe88f609fab746d0",
+      "sha256": "c153c5b0cc4f70a37069ba7dec6e1d45a875c5dbe14cb2d6eaae5836447cf6fe",
       "size": 2728,
       "stored": false,
       "mode": "copy",
@@ -7267,7 +7267,7 @@
     },
     {
       "name": "res/layout/mtrl_picker_text_input_date.xml",
-      "sha256": "6545cf66fb20c18baf6dc8030e894ee79d69b78f85d93a34759280578a26a1f9",
+      "sha256": "705539a32b8fbb7e7d5428c77911832f59a6e0adf9c81bd2ff53ac82ef25c634",
       "size": 984,
       "stored": false,
       "mode": "copy",
@@ -7276,7 +7276,7 @@
     },
     {
       "name": "res/layout/mtrl_picker_text_input_date_range.xml",
-      "sha256": "d006266f757568889030d902e325ca6bc8e5d3a566c6772be5f736269838e09f",
+      "sha256": "11f220080cbf462e61c8f899fd503c89385aec975bf09d2709868b89a860a1e9",
       "size": 1460,
       "stored": false,
       "mode": "copy",
@@ -7519,7 +7519,7 @@
     },
     {
       "name": "res/layout-land/material_clock_period_toggle_land.xml",
-      "sha256": "73e8e6eb2c4b4904462716b57573d19a4d763a9469b658e1e2986e4e9b5b4346",
+      "sha256": "465a77581ea5ad015f4ed253321048bebd74e8ef5802719353d6c45e41982dd5",
       "size": 1276,
       "stored": false,
       "mode": "copy",
@@ -7888,7 +7888,7 @@
     },
     {
       "name": "assets/datadog.buildId",
-      "sha256": "257eaceb47bdc24247402f290cf0b1040db6adb248d97ec6481fc7c1b6987928",
+      "sha256": "b7d755f96ce75c03b0b1b15b5be717761b9b8b6fed60c770fdac2758d24fb370",
       "size": 36,
       "stored": true,
       "mode": "copy",
@@ -7933,8 +7933,8 @@
     },
     {
       "name": "assets/dexopt/baseline.prof",
-      "sha256": "77ba56b337481673447825f8dd077a682eac7006a1ba6ce2514f03236f908317",
-      "size": 16310,
+      "sha256": "46099fba78eb26ea80e0a20af6f3f5d32039425318d7f75a40602e8b63a3fed6",
+      "size": 16549,
       "stored": true,
       "mode": "copy",
       "module": "base.apk",
@@ -7942,8 +7942,8 @@
     },
     {
       "name": "assets/dexopt/baseline.profm",
-      "sha256": "93c748244d0ccc0c94a3fdf42846b54ad3b12ae6750b31854c40a9bfa4cb3c2a",
-      "size": 1964,
+      "sha256": "f65dcdc688c75ee18fcde1a278d10beeb1561c6363ae0bdfb653fc211e6e4733",
+      "size": 1965,
       "stored": true,
       "mode": "copy",
       "module": "base.apk",

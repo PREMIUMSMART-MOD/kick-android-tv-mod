@@ -27,8 +27,8 @@ def main() -> None:
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--signing-keystore", type=Path)
     parser.add_argument("--signing-alias", default="patcher")
-    parser.add_argument("--version-code", type=int, default=2)
-    parser.add_argument("--version-name", default="0.1.0")
+    parser.add_argument("--version-code", type=int, default=3)
+    parser.add_argument("--version-name", default="0.1.1")
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
     if args.version_code < 1:

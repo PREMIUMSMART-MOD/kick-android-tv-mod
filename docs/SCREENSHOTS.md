@@ -1,6 +1,6 @@
 # Screenshot provenance
 
-The gallery shows actual applications, with presentation frames and English captions, not UI mockups. The supported Kick version is Android TV 1.11.0 (210).
+The gallery shows the patcher 0.1.0 and Kick Android TV 1.11.0 (210) as captured in November 2026. See the README for current version support.
 
 - **patcher.png:** release patcher, captured on 18 November 2026 from physical display 0 of the Canal+ Skyworth Android 10 box through a passive scrcpy 5.0.1 recording. The remote remained available. This is a UI capture, not proof of installation.
 - **settings.png:** real English-language Kick DEBUG preferences, captured on 17 November 2026 from physical display 0 of the same box. The account sidebar was cropped out. Pools and Just Sleeping are off, ASMR and the audio compressor are on, and the selected target is 3 seconds. These are captured preferences, not asserted defaults.

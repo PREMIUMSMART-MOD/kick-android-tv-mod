@@ -11,7 +11,7 @@ Android asks the user to approve installation. This is not a silent installer. U
 ## Publishing support for another Kick version
 
 1. Obtain the precise original variant. Port the modifications and test them independently, including playback and device behavior. A new upstream version is not supported merely because it exists.
-2. Prepare and verify a matching profile. Update `app/assets/support.json` with the supported version/code and exact APKMirror variant URL. Ensure `profile/profile.json` agrees. The existing profile preparation script is version-specific and needs a deliberate update when porting.
+2. Set the supported version, build and exact APKMirror variant URL in `app/assets/support.json`. Generate the matching profile from the original APKM and the tested mod, then verify it. The generator checks the input package and version against the support metadata. Each profile pins the exact input modules by hash.
 3. Increment the patcher version code and name. Build with the same private release keystore. Never commit it or the original/modified Kick APKs.
 4. Run relevant regression/device checks, including output entry hashes, signing identity and the update flow. The app binds its private verified output to a fingerprint of the bundled profile. An old or unmarked output is kept on disk but is not presented as a result of the new profile.
 5. Generate update metadata from the final signed APK:
